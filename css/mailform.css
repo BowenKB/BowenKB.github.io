@@ -1,0 +1,174 @@
+.contitle {
+
+	font-family: Oswald;
+	font-size: 2.5em;
+	color: #1C1C1C;
+	margin-top: 2%;
+	margin-bottom: 2%;
+
+}
+
+div.con {
+
+	width: 80%;
+	position: relative;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+form {
+
+	margin-left: auto;
+	margin-right: auto;
+	color: #F2F2F2;
+
+}
+
+input {
+
+	height: 5%;
+	background-color: #F2F2F2;
+	width: 50%;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	color: #1C1C1C;
+	margin-top: 2%;
+	border-radius: 0px;
+	border: 3px solid #1C1C1C;
+	padding: 12px;
+
+}
+
+input:hover {
+
+	border: 3px solid #2E64FE;
+
+}
+
+input:focus {
+
+	border: 3px solid #04B404;
+	outline: none;
+	color: #1C1C1C; 
+
+}
+
+input[type="submit"] {
+
+	width: 100px;
+	height: 50px;
+	font-size: .8em;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	background-color: #F2F2F2;
+	color: #1C1C1C;
+	border: 3px solid #1C1C1C;
+	margin-top: 3%;
+	display: table-cell;
+	vertical-align: middle;
+	margin-right: 2%;
+	font-family: Oswald;
+
+}
+
+input[type="submit"]:hover {
+
+	background-color: #04B404;
+	border: 3px solid #F2F2F2;
+	color: #F2F2F2;
+
+}
+
+input[type="reset"] {
+
+	width: 100px;
+	height: 50px;
+	font-size: .8em;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	background-color: #F2F2F2;
+	color: #1C1C1C;
+	border: 3px solid #1C1C1C;
+	margin-top: 3%;
+	display: table-cell;
+	font-family: Oswald;
+	vertical-align: middle;
+
+}
+
+input[type="reset"]:hover {
+
+	background-color: #FE2E2E;
+	border: 3px solid #F2F2F2;
+	color: #F2F2F2;
+
+}
+
+textarea {
+
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F2F2F2;
+	height: 200px;
+	width: 50%;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	color: #1C1C1C;
+	margin-top: 2%;
+	border-radius: 0px;
+	border: 3px solid #1C1C1C;
+	padding: 12px;
+	font-family: sans-serif;
+
+}
+
+textarea:hover {
+
+	border: 3px solid #2E64FE;
+
+}
+
+textarea:focus {
+
+	border: 3px solid #04B404;
+	outline: none;
+	color: #1C1C1C;
+
+}
+
+/* Changes the place holder color for the input boxes */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    
+    color: #1C1C1C;
+    
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    
+    color: #1C1C1C;
+    opacity: 1;
+    
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    
+    color: #1C1C1C;
+    opacity: 1;
+    
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    
+    color: #1C1C1C;
+    
+}
