@@ -4,157 +4,52 @@
 
 	<head>
 	
-		<!-- The main css file, containing basic site-wide properties -->
-		<link type="text/css" rel="stylesheet" href="css/main.css" />
-		
-		<!-- File containing properties for the very first viewed part of the site -->
-		<link type="text/css" rel="stylesheet" href="css/head.css" />
-		
-		<!-- CSS for the image grid (second down from the top) -->
-		<link type="text/css" rel="stylesheet" href="css/grid.css" />
-		
-		<!-- CSS for the 'back to top' button -->
-		<link type="text/css" rel="stylesheet" href="css/backToTop.css" />
-		
-		<!-- CSS for the about section of the page -->
-		<link type="text/css" rel="stylesheet" href="css/about.css" />
-		
-		<!-- CSS for the contact form -->
-		<link type="text/css" rel="stylesheet" href="css/mailform.css" />
-		
 		<title>Bowen.</title>
+		<link type="text/css" rel="stylesheet" href="css/main.css" />
+		<link type="text/css" rel="stylesheet" href="css/sidebar.css" />
+		<link type="text/css" rel="stylesheet" href="css/home.css" />
 	
 	</head>
 	
 	<body>
-		
-		<a href="#"><div id="backToTop" title="Back To Top"></div></a>
 	
-		<div class="head">
+		<div class="sidebar">
 		
-			<p id="headTitle">Bowen.</p>
+			<a title="" href="#"><p class="title">Bowen.</p></a>
 			
-			<table class="buttons">
+			<ul>
 			
-				<tr>
+				<a title="" href="projects.html"><li id="red">Projects</li></a>
 				
-					<td class="space"><a href="#workSection"><div class="button" id="blue">WORK</div></a></td>
-					<td class="space"><a href="#aboutSection"><div class="button" id="red">ABOUT</div></a></td>
-					<td class="space"><a href="#contactSection"><div class="button" id="green">CONTACT</div></a></td>
+				<a title="" target="_blank" href="http://www.theRealMrSkeltal.tumblr.com"><li id="blue">Blog</li></a>
 				
-				</tr>
+				<a title="" href="contact.html"><li id="green">Contact</li></a>
 			
-			</table>
+			</ul>
 		
 		</div>
 		
-		<a name="workSection" id="WS"></a>
+		<div class="content">
 		
-		<div class="gridcontainer">
+			<h1>Hi. I'm Bowen.</h1>
 			
-			<table>
-				
-			<tr>
-				
-				<td class="si"><div class="imgwrap"><div class="yo" id="first"></div><div class="desc">Title.</div></div></td>
-				<td class="th"><div class="imgwrap"><div class="yo" id="first"></div><div class="desc">Title.</div></div></td>
-				
-			</tr>
-				
-			</table>
-				
-			<table>
-				
-			<tr>
-				
-				<td class="fi"><div class="imgwrap"><div class="yo" id="first"></div><div class="desc">Title.</div></div></td>
-				<td class="fi"><div class="imgwrap"><div class="yo" id="first"></div><div class="desc">Title.</div></div></td>
-				
-			</tr>
-				
-			</table>
-				
-			<table>
-				
-			<tr>
-				
-				<td class="th"><div class="imgwrap"><div class="yo" id="first"></div><div class="desc">Title.</div></div></td>
-				<td class="si"><div class="imgwrap"><div class="yo" id="first"></div><div class="desc">Title.</div></div></td>
-				
-			</tr>
-				
-			</table>
-				
-			<table>
-				
-			<tr>
-				
-				<td class="si"><div class="imgwrap"><div class="yo" id="first"></div><div class="desc">Title.</div></div></td>
-				<td class="th"><div class="imgwrap"><div class="yo" id="first"></div><div class="desc">Title.</div></div></td>
-				
-			</tr>
-				
-			</table>
+			<p class="general">
 			
-		</div>
-		
-		<hr />
-		
-		<a name="aboutSection" id="AS"></a>
-		
-		<div class="about">
-		
-			<p class="title">WHO I AM</p>
-			
-			<p>Currently, I am sixteen years old, attending Evansville High School in Wisconsin.
-			I love to read, draw, design and code. And I game a lot. I hope to one day work at
-			Google, or Canonical, or better still create my own software company!</p>
-			
-			<p class="title">WHAT I DO</p>
-			
-			<p>I build websites, and, in time, webapps! I have experience with HTML, CSS, and 
-			Javascript. I am constantly working to improve my practices and sharpen my
-			skills, by doing plenty of personal practice projects among work for others.</p>
-			
-			<p class="title">WORKING FOR YOU</p>
-			
-			<p>If you have any interest in working with me, in either web design or the
-			underlying code, feel free to contact me through the contact section below!
-			Pricing varies depending on the work needed.</p>
-		
-		</div>
-		
-		<hr />
-		
-		<a name="contactSection" id="CS"></a>
-		
-		<div class="con">
-				
-			<p class="contitle">CONTACT</p>
-			
-			<form action="php/contact.php" method="post" >
-			
-				<input name="name" placeholder="Your Name" />
-				
+				And I do web design and development, with experience in HTML, CSS, and JavaScript.
+				Currently, I am a fully independent developer, hoping to one day join 
+				<a class="link" title="" target="_blank" href="https://www.google.com/intl/en/about/">Google</a> or
+				<a class="link" title="" target="_blank" href="http://www.canonical.com/">Canonical</a>.
 				<br />
-				
-				<input name="email" placeholder="Your Email" />
-				
 				<br />
-				
-				<textarea name="message" placeholder="Your Message" ></textarea>
-				
+				If you have any interest in working with me, please feel free to contact me via the contact page.
+				If you'd like to see any of my previous work, take a gander at the projects page!
 				<br />
-				
-				<input type="submit" name="submit" value="Submit" />
-				
-				<input type="reset" value="Reset">
-			
-			</form>
-			
-		</div>
+				<br />
+				<span>Thanks!</span>
+							
+			</p>
 		
-		<div class="footer">Copyright 2014 - Bowen Brunner</div>
+		</div>
 	
 	</body>
 

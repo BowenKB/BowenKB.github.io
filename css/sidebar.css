@@ -1,0 +1,122 @@
+.sidebar {
+
+	background-color: #151515;
+	position: fixed;
+	width: 20%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	font-size: 1em;
+	color: #F2F2F2;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	opacity: 0.5;
+	
+}
+
+.sidebar:hover {
+
+	opacity: 1;
+
+}
+
+.title {
+
+	font-size: 3em;
+	font-family: Oswald;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	position: relative;
+	margin-left: 14%;
+	margin-top: 10%;
+	color: #F2F2F2;
+	padding: 10px 10px 10px 10px;
+
+}
+
+.title:hover {
+
+	color: #0080FF;
+	background-color: #F2F2F2;
+
+}
+
+.title:active {
+
+	color: #045FB4;
+
+}
+
+ul {
+
+	list-style-type: none;
+	position: relative;
+	margin-top: 5%;
+
+}
+
+ul li {
+
+	background-image: none;
+	font-size: 1em;
+	color: #F2F2F2;
+	padding: 10px 10px 10px 10px;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+
+}
+
+ul li:hover {
+
+	background-color: #F2F2F2;
+
+}
+
+ul li:active {
+
+	background-color: #D8D8D8;
+
+}
+
+#red:hover {
+
+	color: #FA5858;
+
+}
+
+#red:active {
+
+	color: #DF0101;
+
+}
+
+#blue:hover {
+
+	color: #0080FF;
+
+}
+
+#blue:active {
+
+	color: #045FB4;
+
+}
+
+#green:hover {
+
+	color: #04B404;
+
+}
+
+#green:active {
+
+	color: #088A08;
+
+}

@@ -1,0 +1,58 @@
+.content {
+
+	position: relative;
+	margin-left: 20%;
+	top: 0px;
+	height: 100%;
+	padding-right: 10%;
+
+}
+
+h1 {
+
+	color: #F2F2F2;
+	font-family: Oswald;
+	font-size: 5em;
+	position: relative;
+	margin-top: 3%;
+	margin-left: 10%;
+
+}
+
+.general {
+
+	margin-top: 5%;
+	font-size: 1.5em;
+	margin-left: 10%;
+	line-height: 2em;
+	color: #BDBDBD;
+
+}
+
+.link {
+
+	color: #0080FF;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+
+}
+
+.link:hover {
+
+	color: #0431B4;
+
+}
+
+.link:active {
+
+	color: #FA5858;
+
+}
+
+span {
+
+	font-size: 2em;
+
+}
