@@ -3,78 +3,154 @@
 <html>
 
 	<head>
-	
-		<title>Yearbook</title>
-		
-		<link type="text/css" rel="stylesheet" href="css/main.css" />
-	
-	</head>
-	
-	<body>
-	
-		<div class="wrapper">
-		
-			<p class="title">YEARBOOK</p>
-	
-		</div>
-		
-		<hr />
-		
-		<div class="content">
-		
-			<p class="section">APPS</p>
-			
-			<hr id="sep" />
-		
-			<table class="pics">
-				
-				<tr>
-				
-					<td id="text">Flappy Bird</td>
-					<td id="text">Angry Birds</td>
-					<td id="text">Plants v. Zombies</td>
-					<td id="text">Candy Crush</td>
-				
-				</tr>
-				
-				<tr>
-				
-					<td id="flappybird"></td>
-					<td id="angry"></td>
-					<td id="plants"></td>
-					<td id="candy"></td>
-					
-				</tr>
 
-			</table>
+		<title>Web Design</title>
+
+		<link type="text/css" rel="stylesheet" href="css/main.css" />
+		<link type="text/css" rel="stylesheet" href="css/sidebar.css" />
+		<link type="text/css" rel="stylesheet" href="css/content.css" />
+		<link type="text/css" rel="stylesheet" href="css/roles.css" />
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<!-- SMOOTH SCROLL FUNCTION -->
+
+		<script>
+
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1500);
+
+						return false;
+
+						}
+					}
+				});
+			});
+
+		</script>
+
+	</head>
+
+	<body id="top">
+
+		<script>
+
+			 $(function(){
+
+				$('a', '#sidebar').on('click', function(){
+
+				$('a', '#sidebar').removeClass('active');
+
+				$(this).addClass('active');
+
+				return false;
+
+				});
+			});
+
+		</script>
+
+		<div id="sidebar">
+
+			<a class="title" href="#top" title="Back To Top">DESIGN</a>
+
+			<hr class="titleSep" />
+
+			<a id="section" style="margin-top: 20%" href="#intro">Design Basics</a>
+			<a id="section" href="#roles">Job Roles</a>
+			<a id="section" href="#culture">Companies need it</a>
 			
-			<p class="section" id="largemarge">COLORS</p>
-			
-			<hr id="sep" />
-			
-			<table>
-			
-				<tr class="colors">
-				
-					<td id="green"></td>
-					<td id="red"></td>
-					<td id="blue"></td>
-					<td id="purple"></td>
-					<td id="orange"></td>
-				
-				</tr>
-			
-			</table>
-			
-			<p class="font" id="oswald">Oswald</p>
-			<p class="font" id="opensans">OpenSans</p>
-			<p class="font" id="ostrich">OstrichSans</p>
-			<p class="font" id="nevis">Nevis</p>
-			<p class="font" id="shrek">Shrek</p>
-			<p class="font" id="comic">ComicSans Neue</p>
-		
+			<p class="footer">Bowen Brunner, 2014</p>
+
 		</div>
-	
+
+		<div class="content">
+
+			<div class="postColor" id="intro">
+
+				<p class="postTitle">WEB DESIGN</p>
+
+				<hr class="basicSep" />
+
+				<p class="basicTitle">Good</p>
+
+				<div class="example" id="goodOne"><div class="overlay"><p class="overlayText">Webfire, 2013</p></div></div>
+
+				<hr class="basicSep" id="between" />
+
+				<p class="basicTitle">Bad</p>
+
+				<div class="example" id="badOne"><div class="overlay"><p class="overlayText">Ling's Cars</p></div></div>
+
+			</div>
+
+			<div class="post" id="roles">
+			
+				<p class="postTitle">DEVELOPMENT ROLES</p>
+				
+				<hr class="basicSep" />
+				
+				<table class="jobRoles">
+				
+					<tr>
+					
+						<td><p class="tableTitle">Design</p></td>
+						<td><p class="tableTitle">Frontend</p></td>
+						<td><p class="tableTitle">Backend</p></td>
+					
+					</tr>
+					
+					<tr>
+					
+						<td><img class="icon" src="images/icons/design.png" /></td>
+						<td><img class="icon" src="images/icons/frontend.png" /></td>
+						<td><img class="icon" src="images/icons/backend.png" /></td>
+					
+					</tr>
+					
+					<tr>
+					
+						<td>Create the first drafts of the site and layout the general design on paper.</td>
+						<td>Attempt to put the designers vision into action</td>
+						<td>Set up the real functionality of the site; anything that requires 'logic'</td>
+					
+					</tr>
+				
+				</table>
+			
+			</div>
+
+			<div class="postColor" id="culture">
+			
+				<p class="bigText">
+				
+					The internet is huge, and companies need it to survive today.
+				
+				</p>
+			
+			</div>
+
+		</div>
+
+		<!-- <script>
+
+			window.onload = (function() {
+
+				alert("THIS SITE IS GARBAGE UNDER INTERNET EXPLORER");
+
+			});
+
+		</script> -->
+
 	</body>
 
 </html>

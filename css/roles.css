@@ -1,0 +1,50 @@
+table.jobRoles {
+
+	width: 90%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+table.joRoles tr {
+
+	width: 30%;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+table.jobRoles tr td {
+
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+p.tableTitle {
+
+	font-family: Nevis;
+	font-size: 2em;
+	color: #1C1C1C;
+
+}
+
+img.icon {
+
+	height: 64px;
+	width: 64px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10%;
+	border: none;
+	outline: none;
+
+}

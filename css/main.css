@@ -1,5 +1,12 @@
 @font-face {
 
+	font-family: Oswald;
+	src: url('../fonts/Oswald.ttf');
+
+}
+
+@font-face {
+
 	font-family: OpenSans;
 	src: url('../fonts/OpenSans.ttf');
 
@@ -7,274 +14,24 @@
 
 @font-face {
 
-	font-family: Oswald;
-	src: url('../fonts/Oswald-Regular.ttf');
-
-}
-
-@font-face {
-
-	font-family: OstrichSans;
-	src: url('../fonts/OstrichSans.otf');
-
-}
-
-@font-face {
-
 	font-family: Nevis;
-	src: url('../fonts/nevis.ttf');
-
-}
-
-@font-face {
-
-	font-family: Shrek;
-	src: url('../fonts/shrek.ttf');
-
-}
-
-@font-face {
-
-	font-family: ComicNeue;
-	src: url('../fonts/ComicNeue.ttf');
+	src: url('../fonts/Nevis.ttf');
 
 }
 
 body {
 
-	font-family: Opensans;
-	font-size: 16px;
-	color: #F2F2F2;
 	padding: 0px;
-	background-image: url('../images/back.JPG');
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-
-}
-
-.wrapper {
-
-	height: 5%;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	margin-top: 10%
-
-}
-
-.content {
-
-	width: 80%;
-	padding: 20px;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
 	background-color: #F2F2F2;
-	margin-top: 22%;
-	border-radius: 4px;
-
-}
-
-.title {
-
-	position: relative;
-	font-size: 5em;
-	font-family: Oswald;
-	text-align: center;
-
-}
-
-hr {
-
-	width: 10%;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	top: -30px;
-	border: none;
-	border-bottom: 3px solid #F2F2F2;
-	height: 3px;
-
-}
-
-#sep {
-
-	border-bottom: 3px solid #C1C1C1;
-
-}
-
-.section {
-
-	color: #C1C1C1;
-	font-size: 3em;
-	font-family: Oswald;
-	text-align: center;
-	margin-top: 2%;
-
-}
-
-table {
-
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2%;
-	margin-bottom: 2%;
-	position: relative;
-
-}
-
-tr {
-
-	width: 25%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2%
-
-}
-
-td {
-
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 320px;
-	width: 180px;
+	font-size: 16px;
 	font-family: OpenSans;
-	font-size: 1.5em;
-	text-align: center;
-	color: #C1C1C1;
-	position: relative;
-
-}
-
-#text {
-
-	height: auto;
-	margin-bottom: 2%;
-	padding-bottom: 20px;
-
-}
-
-#flappybird {
-
-	background-image: url('../images/screenshots/flappybird.png');
-
-}
-
-#angry {
-
-	background-image: url('../images/screenshots/angry.jpg');
-
-}
-
-#plants {
-
-	background-image: url('../images/screenshots/plants.jpg');
-
-}
-
-#candy {
-
-	background-image: url('../images/screenshots/candycrush.png');
-
-}
-
-tr.colors {
-
-	width: 20%;
-	height: 20%;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
-tr.colors td {
-
-	height: 150px;
-
-}
-
-#blue {
-
-	background-color: rgba(52, 152, 219,1.0);
-
-}
-
-#green {
-
-	background-color: rgba(46, 204, 113,1.0);
-
-}
-
-#red {
-
-	background-color: rgba(231, 76, 60,1.0);
-
-}
-
-#purple {
-
-	background-color: rgba(155, 89, 182,1.0);
-
-}
-
-#orange {
-
-	background-color: #FE9A2E;
-
-}
-
-#largemarge {
-
-	margin-top: 4%;
-
-}
-
-.font {
-
 	color: #1C1C1C;
-	font-size: 3em;
-	font-family: Oswald;
-	text-align: center;
-	margin-top: 2%;
 
 }
 
-#oswald {
+a {
 
-	margin-top: 8%;
-	position: relative;
-
-}
-
-#opensans {
-
-	font-family: OpenSans;
-
-}
-
-#nevis {
-
-	font-family: Nevis;
-
-}
-
-#ostrich {
-
-	font-family: OstrichSans;
-
-}
-
-#shrek {
-
-	font-family: Shrek;
-
-}
-
-#comic {
-
-	font-family: ComicNeue;
+	text-decoration: none;
+	color: inherit;
 
 }
