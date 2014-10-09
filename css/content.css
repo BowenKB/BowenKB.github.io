@@ -3,6 +3,7 @@
 	width: 80%;
 	height: 100%;
 	margin-left: 20%;
+	left: 20px;
 	position: relative;
 
 }
@@ -199,5 +200,6 @@ hr.basicSep {
 	font-family: Nevis;
 	line-height: 1em;
 	text-align: center;
+	margin: 20px;
 
 }
