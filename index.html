@@ -58,6 +58,41 @@
 			});
 
 		</script>
+		
+		<script>
+		
+		var rolloverImage = "../images/icons/design_hover.png";
+		var origImage = "../images/icons/design.png";
+		
+		$("#roles")
+		
+		.mouseover(function() {
+		
+			$("#roles table tr td #designIcon").attr("src", rolloverImage);
+		
+		});
+		
+		.mouseout(function() {
+        
+          $("#roles table tr td #deignIcon").attr("src", origImage);
+		
+		});
+		
+		</script>
+		
+		<!--[if IE]> 
+		
+		<script>
+
+			window.onload = (function() {
+
+				alert("THIS SITE IS GARBAGE UNDER INTERNET EXPLORER");
+
+			});
+
+		</script> 
+		
+	<![endif]-->
 
 		<div id="sidebar">
 
@@ -111,9 +146,9 @@
 					
 					<tr>
 					
-						<td><img class="icon" src="images/icons/design.png" /></td>
-						<td><img class="icon" src="images/icons/frontend.png" /></td>
-						<td><img class="icon" src="images/icons/backend.png" /></td>
+						<td><div class="icon" id="designIcon"></div></td>
+						<td><div class="icon" id="frontendIcon"></div></td>
+						<td><div class="icon" id="backendIcon"></div></td>
 					
 					</tr>
 					
@@ -140,16 +175,6 @@
 			</div>
 
 		</div>
-
-		<!-- <script>
-
-			window.onload = (function() {
-
-				alert("THIS SITE IS GARBAGE UNDER INTERNET EXPLORER");
-
-			});
-
-		</script> -->
 
 	</body>
 

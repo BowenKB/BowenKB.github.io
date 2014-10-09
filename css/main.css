@@ -9,6 +9,7 @@
 
 	font-family: OpenSans;
 	src: url('../fonts/OpenSans.ttf');
+	src: url('../fonts/OpenSans.oft');
 
 }
 
@@ -16,6 +17,7 @@
 
 	font-family: Nevis;
 	src: url('../fonts/Nevis.ttf');
+	src: url('../fonts/Nevis.oft');
 
 }
 

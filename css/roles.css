@@ -32,19 +32,61 @@ p.tableTitle {
 
 	font-family: Nevis;
 	font-size: 2em;
-	color: #1C1C1C;
+	color: inherit;
 
 }
 
-img.icon {
+div.icon {
 
-	height: 64px;
-	width: 64px;
+	height: 128px;
+	width: 128px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10%;
 	border: none;
 	outline: none;
+	background-position: center;
+	background-size: cover;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+
+}
+
+#designIcon {
+
+	background-image: url('../images/icons/design.png');
+
+}
+
+#frontendIcon {
+
+	background-image: url('../images/icons/frontend.png');
+
+}
+
+#backendIcon {
+
+	background-image: url('../images/icons/backend.png');
+
+}
+
+#roles:hover table tr td #designIcon {
+
+	background-image: url('../images/icons/design_hover.png');
+
+}
+
+#roles:hover table tr td #frontendIcon {
+
+	background-image: url('../images/icons/frontend_hover.png');
+
+}
+
+#roles:hover table tr td #backendIcon {
+
+	background-image: url('../images/icons/backend_hover.png');
 
 }

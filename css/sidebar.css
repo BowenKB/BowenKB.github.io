@@ -1,16 +1,33 @@
+@-webkit-keyframes neato {
+    0%{background-position:88% 0%}
+    50%{background-position:13% 100%}
+    100%{background-position:88% 0%}
+}
+@-moz-keyframes neato {
+    0%{background-position:88% 0%}
+    50%{background-position:13% 100%}
+    100%{background-position:88% 0%}
+}
+@keyframes neato { 
+    0%{background-position:88% 0%}
+    50%{background-position:13% 100%}
+    100%{background-position:88% 0%}
+}
+
 #sidebar {
 
 	position: fixed;
 	height: 100%;
 	width: 20%;
-	opacity: 0.5;
-	background-color: #E6E6E6;
+	background-size: 600% 600%;
+	background-image: url('../images/other/sidebar_color.png');
 	padding-left: 20px;
 	text-align: left;
-	border-right: 2px solid #BDBDBD;
 	top: 0px;
 	bottom: 0px;
 	left: 0px;
+	opacity: 0.5;
+	color: #1C1C1C;
 	-webkit-transition: all 250ms ease-in-out;
 	-moz-transition: all 250ms ease-in-out;
 	-o-transition: all 250ms ease-in-out;
@@ -20,7 +37,13 @@
 
 #sidebar:hover {
 
+	background-image: url('../images/other/sidebar_back.png');
+	background-size: 600% 600%;
+	color: #F2F2F2;
 	opacity: 1;
+	-webkit-animation: neato 12s ease infinite;
+	-moz-animation: neato 12s ease infinite;
+	animation: neato 12s ease infinite;
 
 }
 
@@ -28,7 +51,7 @@
 
 	font-family: Nevis;
 	font-size: 3em;
-	color: #1C1C1C;
+	color: inherit;
 	display: block;
 	position: relative;
 	margin-top: 10%;
@@ -42,13 +65,13 @@
 
 .title:hover {
 
-	color: #0080FF;
+	color: #FE9A2E;
 
 }
 
 .title:active {
 
-	color: #0080FF;
+	color: #FE9A2E;
 
 }
 
@@ -74,7 +97,7 @@ hr.titleSep {
 #section {
 
 	font-size: 1em;
-	color: #A4A4A4;
+	color: inherit;
 	margin-left: 10px;
 	display: block;
 	margin-top: 8%;
@@ -88,19 +111,19 @@ hr.titleSep {
 
 #section:hover {
 
-	color: #1C1C1C;
+	color: #FE9A2E;
 
 }
 
 #section:active {
 
-	color: #0080FF;
+	color: #FE9A2E;
 
 }
 
 #sidebar a.active {
 
-	color: #0080FF;
+	color: #FE9A2E;
 
 }
 
