@@ -9,9 +9,8 @@
 
 .postColor {
 
-	width: 90%;
+	width: 100%;
 	background-color: #E6E6E6;
-	padding: 20px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -34,8 +33,7 @@
 
 .post {
 
-	width: 90%;
-	padding: 20px;
+	width: 100%;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
