@@ -1,78 +1,40 @@
-p.name {
+div.content {
     
-    font-family: Nevis;
-    font-size: 4em;
-    color: #088A4B;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
     position: relative;
-    
-}
-
-hey {
- 
-    font-size: 2em;
-    display: block;
-    font-family: nevis;
-    margin-bottom: 3%;
-    
-}
-
-p.general {
-    
-    text-align: center; 
-    line-height: 2em;
-    
-}
-
-div.imageContain {
-    
-    width: 100%;
     left: 0px;
     right: 0px;
+    
+}
+
+div.content::before {
+    
+    height: 450px;
+    display: block;
+    content: "";
+    
+}
+
+div.workContainer {
+    
+    width: 80%;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px;
-    margin-top: 3%;
-    margin-bottom: 3%;
     
 }
 
-#vince:hover {
+div.work {
     
-    cursor: pointer;
-    transform: scale(1.1);
-    z-index: 2;
-    
-}
-
-#octopus:hover {
-    
-    cursor: pointer;
-    transform: scale(1.1);
-    z-index: 2;
-    
-}
-
-#other:hover {
-    
-    cursor: pointer;
-    transform: scale(1.1);
-    z-index: 2;
-    
-}
-
-#vince {
-    
-    background-image: url('../images/vince.png'); 
-    width: 33%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    display: inline-block;
+    position: relative;
+    border: none;
+    opacity: 0.6;
     -webkit-transition: all 250ms ease-in-out;
 	-moz-transition: all 250ms ease-in-out;
 	-o-transition: all 250ms ease-in-out;
@@ -80,17 +42,33 @@ div.imageContain {
     
 }
 
-#octopus {
+div.work:hover {
     
-    background-image: url('../images/octopus.png');   
-    width: 33%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    display: inline-block;
-    background-size: cover;
-    background-position: center;
-    height: 300px;
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 1;
+    
+}
+
+div.work:hover div.overlay {
+    
+    opacity: 1;   
+    
+}
+
+div.overlay {
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    opacity: 0;
+    background-color: rgba(4, 180, 95, 0.8);
+    color: #F2F2F2;
+    font-size: 2em;
+    line-height: 300px;
     -webkit-transition: all 250ms ease-in-out;
 	-moz-transition: all 250ms ease-in-out;
 	-o-transition: all 250ms ease-in-out;
@@ -98,34 +76,266 @@ div.imageContain {
     
 }
 
-#other {
+#design {
     
-    background-image: url('../images/tank.png');   
-    width: 33%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    display: inline-block;
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    -webkit-transition: all 250ms ease-in-out;
-	-moz-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
-	transition: all 250ms ease-in-out;
+    width: 50%;   
+    background-image: url('../images/screenshots/design.PNG');
+    float: left;
     
 }
 
-fabric {
+#jerrys {
+    
+    width: 50%;
+    background-image: url('../images/screenshots/jerryskids.PNG');
+    float: right;
+    
+}
+
+#port7 {
+    
+    width: 35%;
+    background-image: url('../images/screenshots/port7.PNG');
+    float: left;
+    
+}
+
+#port8 {
+    
+    width: 65%;
+    background-image: url('../images/screenshots/port8.PNG');
+    float: right;
+    
+}
+
+#port9 {
+    
+    width: 65%;
+    background-image: url('../images/screenshots/port9.PNG');
+    float: left;
+    
+}
+
+#pyros {
+    
+    width: 35%;
+    background-image: url('../images/screenshots/pyros.PNG');
+    float: right;
+    
+}
+
+#watchlist {
     
     width: 100%;
-    left: 0px;
-    right: 0px;
+    background-image: url('../images/screenshots/watchlist.PNG');
+    
+}
+
+p.headTitle {
+    
+    margin-top: 5%;
+    text-align: center;
+    font-family: Playfair;
+    font-size: 3em;
+    position: relative;
+    color: #848484;
+    
+}
+
+hr.simple {
+    
+    border: none;
+    border-bottom: 2px solid #848484;
+    width: 10%;
     margin-top: 3%;
-    height: 300px;
-    background-image: url('../images/fabric.jpg');
-    background-position: center;
-    background-repeat: repeat;
-    display: block;
+    margin-bottom: 3%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+div.aboutContainer {
+    
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    
+}
+
+div.aboutContainer p {
+    
+    font-size: 1.5em; 
+    text-align: center;
+    
+}
+
+span {
+    
+    font-size: 2em;
+    font-family: Playfair;
+    
+}
+
+div.contactContainer {
+    
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    text-align: center;
+    
+}
+
+form {
+
+	margin-left: auto;
+	margin-right: auto;
+	color: #F2F2F2;
+    position: relative;
+
+}
+
+input {
+
+	height: 5%;
+	background-color: #F2F2F2;
+	width: 50%;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	color: #1C1C1C;
+	margin-top: 2%;
+	border-radius: 0px;
+	border: 2px solid #D8D8D8;
+	padding: 12px;
+
+}
+
+input:hover {
+
+	border: 2px solid #848484;
+
+}
+
+input:focus {
+
+	border: 2px solid #04B45F;
+	outline: none;
+	color: #1C1C1C; 
+
+}
+
+input[type="submit"] {
+
+	width: 100px;
+	height: 50px;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	background-color: #F2F2F2;
+	color: #1C1C1C;
+	border: 2px solid #D8D8D8;
+	margin-top: 3%;
+	display: table-cell;
+	vertical-align: middle;
+	margin-right: 2%;
+
+}
+
+input[type="submit"]:hover {
+
+	background-color: #04B45F;
+	border: 2px solid #F2F2F2;
+	color: #F2F2F2;
+
+}
+
+input[type="reset"] {
+
+	width: 100px;
+	height: 50px;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	background-color: #F2F2F2;
+	color: #1C1C1C;
+	border: 2px solid #D8D8D8;
+	margin-top: 3%;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+input[type="reset"]:hover {
+
+	background-color: #FA5858;
+	border: 2px solid #F2F2F2;
+	color: #F2F2F2;
+
+}
+
+textarea {
+
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F2F2F2;
+	height: 200px;
+	width: 50%;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	color: #1C1C1C;
+	margin-top: 2%;
+	border-radius: 0px;
+	border: 2px solid #D8D8D8;
+	padding: 12px;
+	font-family: OpenSans;
+
+}
+
+textarea:hover {
+
+	border: 2px solid #848484;
+
+}
+
+textarea:focus {
+
+	border: 2px solid #04B45F;
+	outline: none;
+	color: #1C1C1C;
+
+}
+
+/* Changes the place holder color for the input boxes */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    
+    color: #1C1C1C;
+    
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    
+    color: #1C1C1C;
+    opacity: 1;
+    
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    
+    color: #1C1C1C;
+    opacity: 1;
+    
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    
+    color: #1C1C1C;
     
 }

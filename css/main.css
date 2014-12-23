@@ -1,29 +1,39 @@
 @font-face {
-
-	font-family: OpenSans;
-	src: url('../fonts/OpenSans.ttf');
-
+    
+    font-family: Playfair;
+    src: url('../fonts/Playfair.ttf');
+    
 }
 
 @font-face {
+    
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans.ttf');
+    
+}
 
-	font-family: Nevis;
-	src: url('../fonts/Nevis.ttf');
-
+@font-face {
+    
+    font-family: Nevis;
+    src: url('../fonts/Nevis.ttf');
+    
 }
 
 body {
-
-	padding: 0px;
+    
+    padding: 0px;
+    margin: 0px;
     background-color: #F2F2F2;
-	font-family: OpenSans;
-	color: #1C1C1C;
-
+    font-family: OpenSans;
+    font-size: 1vw;
+    padding-bottom: 5%;
+    color: #2E2E2E;
+    
 }
 
 a {
-
-	text-decoration: none;
-	color: inherit;
-
+    
+    color: inherit;
+    text-decoration: none;
+    
 }

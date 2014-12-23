@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 
 <html>
-    
+
     <head>
     
-        <title>ImaginOcean</title>
+        <title>Bowen.</title>
         
         <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/nav.css" />
         <link type="text/css" rel="stylesheet" href="css/content.css" />
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         
 <!-- NAV TRANSITION SCRIPT ------------------------------------------------------------------------------------------------------------->    
         <script>
-        
-        $("#vince, #other, #octopus").click(function(){
             
-            $(this).addClass("active"); 
+        $(document).ready( function () {
+            
+            $('#nav').css({'top': '30%', 'font-size': '4em', 'background-color': 'transparent'}); 
             
         });
+        
+        $(function () { $(window).scroll(function () {
+        
+            var top_offset = $(window).scrollTop();
+        
+            if (top_offset <= 150) {
+        
+                $('#nav').css({'top': '30%', 'font-size': '4em', 'background-color': 'transparent'});
+        
+            } else {
+        
+                $('#nav').css({'top': '0px', 'font-size': '1.5em', 'background-color': 'rgba(242, 242, 242, 0.7)'});
+        
+            }
+		
+		})
+		
+		});
         
         </script>
         
@@ -46,46 +65,88 @@
 			});
 
 		</script>
-        
-        <style>
-        
-        .active {
-    
-            position: fixed;
-            height: 800px;
-            width: 100%;
-            top: 10%;
-            left: 0px;
-            right: 0px;
-            z-index: 10;
-    
-            }
-        
-        </style>
     
     </head>
-
-    <body>
     
-        <p class="name">ImaginOcean</p>
+<!-- BODY ------------------------------------------------------------------------------------------------------------------------------>
+    
+    <body id="top">
+    
+        <div class="nav" id="nav"><a href="#top" title="Back To Top">Bowen Brunner.</a></div>
         
-        <p class="general">
+        <div class="content">
         
-            <hey>Setting:</hey>
-            Water.
-        
-        </p>
-        
-        <div class="imageContain">
-        
-            <div id="vince"></div>
-            <div id="octopus"></div>
-            <div id="other"></div>
-        
+<!-- WORK SECTION ---------------------------------------------------------------------------------------------------------------------->
+            
+            <p class="headTitle">Work.</p>
+            
+            <hr class="simple" />
+            
+            <div class="workContainer">
+            
+                <div class="work" id="design"><div class="overlay">Design Example</div></div>
+                <div class="work" id="jerrys"><div class="overlay">Jerry's Kids</div></div>
+                
+                <div class="work" id="port7"><div class="overlay">Portfolio #7</div></div>
+                <div class="work" id="port8"><div class="overlay">Portfolio #8</div></div>
+                
+                <div class="work" id="port9"><div class="overlay">Portfolio #9</div></div>
+                <div class="work" id="pyros"><div class="overlay">PYR.OS</div></div>
+                
+                <div class="work" id="watchlist"><div class="overlay">Watchlist</div></div>
+            
+            </div>
+
+<!-- ABOUT SECTION --------------------------------------------------------------------------------------------------------------------->
+            
+            <p class="headTitle">About Me.</p>
+            
+            <hr class="simple" />
+            
+            <div class="aboutContainer">
+            
+                <p>
+                    
+                    <span>H</span>ello, my name is Bowen, and I am a web designer/developer. I have experience with HTML,
+                    CSS, and Javascript/JQuery. I have developed almost 30 sites, with varying purposes. This portfolio site,
+                    for example. I enjoy a good book every now and then, and I enjoy video games even more.
+                
+                </p>
+            
+            </div>
+            
+<!-- CONTACT SECTION ------------------------------------------------------------------------------------------------------------------->
+            
+            <p class="headTitle">Contact.</p>
+            
+            <hr class="simple" />
+            
+            <div class="contactContainer">
+            
+                <form action="php/contact.php" method="post" >
+			
+				    <input name="name" placeholder="Your Name" />
+				
+				    <br />
+				
+				    <input name="email" placeholder="Your Email" />
+				
+				    <br />
+				
+				    <textarea name="message" placeholder="Your Message" ></textarea>
+				
+				    <br />
+				
+				    <input type="submit" name="submit" value="Submit" />
+				
+				    <input type="reset" value="Reset">
+			
+                </form>
+            
+            </div>
+            
         </div>
-        
-        <fabric></fabric>
     
     </body>
-    
+
 </html>
