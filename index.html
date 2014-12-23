@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 
 <html>
-
-	<head>
-
-		<title>Web Design</title>
-
-		<link type="text/css" rel="stylesheet" href="css/main.css" />
-		<link type="text/css" rel="stylesheet" href="css/sidebar.css" />
-		<link type="text/css" rel="stylesheet" href="css/content.css" />
-		<link type="text/css" rel="stylesheet" href="css/roles.css" />
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		
-		<link rel="icon" href="images/other/favicon.ico" type="image/ico" />
-
-		<!-- SMOOTH SCROLL FUNCTION -->
-
-		<script>
+    
+    <head>
+    
+        <title>ImaginOcean</title>
+        
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/content.css" />
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
+<!-- NAV TRANSITION SCRIPT ------------------------------------------------------------------------------------------------------------->    
+        <script>
+        
+        $("#vince, #other, #octopus").click(function(){
+            
+            $(this).addClass("active"); 
+            
+        });
+        
+        </script>
+        
+<!-- SCROLL ANIMATION SCRIPT ----------------------------------------------------------------------------------------------------------->
+        
+        <script>
 
 		$(function() {
 			$('a[href*=#]:not([href=#])').click(function() {
@@ -39,145 +46,46 @@
 			});
 
 		</script>
-
-	</head>
-
-	<body id="top">
-
-		<script>
-
-			 $(function(){
-
-				$('a', '#sidebar').on('click', function(){
-
-				$('a', '#sidebar').removeClass('active');
-
-				$(this).addClass('active');
-
-				return false;
-
-				});
-			});
-
-		</script>
-		
-		<script>
-		
-		var rolloverImage = "../images/icons/design_hover.png";
-		var origImage = "../images/icons/design.png";
-		
-		$("#roles")
-		
-		.mouseover(function() {
-		
-			$("#roles table tr td #designIcon").attr("src", rolloverImage);
-		
-		});
-		
-		.mouseout(function() {
         
-          $("#roles table tr td #deignIcon").attr("src", origImage);
-		
-		});
-		
-		</script>
-		
-		<!--[if IE]> 
-		
-		<script>
+        <style>
+        
+        .active {
+    
+            position: fixed;
+            height: 800px;
+            width: 100%;
+            top: 10%;
+            left: 0px;
+            right: 0px;
+            z-index: 10;
+    
+            }
+        
+        </style>
+    
+    </head>
 
-			window.onload = (function() {
-
-				alert("THIS SITE IS GARBAGE UNDER INTERNET EXPLORER");
-
-			});
-
-		</script> 
-		
-	<![endif]-->
-
-		<div id="sidebar">
-
-			<a class="title" href="#top" title="Back To Top">DESIGN</a>
-
-			<hr class="titleSep" />
-
-			<a id="section" style="margin-top: 20%" href="#intro">Design Basics</a>
-			<a id="section" href="#roles">Job Roles</a>
-			<a id="section" href="#culture">Companies need it</a>
-			
-			<p class="footer">Bowen Brunner, 2014</p>
-
-		</div>
-
-		<div class="content">
-
-			<div class="postColor" id="intro">
-
-				<p class="postTitle">WEB DESIGN</p>
-
-				<hr class="basicSep" />
-
-				<p class="basicTitle">Good</p>
-
-				<div class="example" id="goodOne"><div class="overlay"><p class="overlayText">Webfire, 2013</p></div></div>
-
-				<hr class="basicSep" id="between" />
-
-				<p class="basicTitle">Bad</p>
-
-				<div class="example" id="badOne"><div class="overlay"><p class="overlayText">Ling's Cars</p></div></div>
-
-			</div>
-
-			<div class="post" id="roles">
-			
-				<p class="postTitle">DEVELOPMENT ROLES</p>
-				
-				<hr class="basicSep" />
-				
-				<table class="jobRoles">
-				
-					<tr>
-					
-						<td><p class="tableTitle">Design</p></td>
-						<td><p class="tableTitle">Frontend</p></td>
-						<td><p class="tableTitle">Backend</p></td>
-					
-					</tr>
-					
-					<tr>
-					
-						<td><div class="icon" id="designIcon"></div></td>
-						<td><div class="icon" id="frontendIcon"></div></td>
-						<td><div class="icon" id="backendIcon"></div></td>
-					
-					</tr>
-					
-					<tr>
-					
-						<td>Create the first drafts of the site and layout the general design on paper.</td>
-						<td>Attempt to put the designers vision into action</td>
-						<td>Set up the real functionality of the site; anything that requires 'logic'</td>
-					
-					</tr>
-				
-				</table>
-			
-			</div>
-
-			<div class="postColor" id="culture">
-			
-				<p class="bigText">
-				
-					The internet is huge, and companies need it to survive today.
-				
-				</p>
-			
-			</div>
-
-		</div>
-
-	</body>
-
+    <body>
+    
+        <p class="name">ImaginOcean</p>
+        
+        <p class="general">
+        
+            <hey>Setting:</hey>
+            Water.
+        
+        </p>
+        
+        <div class="imageContain">
+        
+            <div id="vince"></div>
+            <div id="octopus"></div>
+            <div id="other"></div>
+        
+        </div>
+        
+        <fabric></fabric>
+    
+    </body>
+    
 </html>

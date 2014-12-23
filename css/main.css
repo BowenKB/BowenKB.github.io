@@ -1,12 +1,5 @@
 @font-face {
 
-	font-family: Oswald;
-	src: url('../fonts/Oswald.ttf');
-
-}
-
-@font-face {
-
 	font-family: OpenSans;
 	src: url('../fonts/OpenSans.ttf');
 
@@ -22,8 +15,7 @@
 body {
 
 	padding: 0px;
-	background-color: #F2F2F2;
-	font-size: 16px;
+    background-color: #F2F2F2;
 	font-family: OpenSans;
 	color: #1C1C1C;
 

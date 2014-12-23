@@ -1,213 +1,131 @@
-.content {
-
-	height: 100%;
-	margin-left: 20%;
-	margin-top: -10px;
-	margin-bottom: -10px;
-	position: relative;
-	top: 0px;
-	bottom: 0px;
-	left: 20px;
-	width: calc(80% - 20px);
-	z-index: 0;
-
+p.name {
+    
+    font-family: Nevis;
+    font-size: 4em;
+    color: #088A4B;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    position: relative;
+    
 }
 
-.postColor {
-
-	width: 100%;
-	background-color: #E6E6E6;
-	position: relative;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	color: #BDBDBD;
-
+hey {
+ 
+    font-size: 2em;
+    display: block;
+    font-family: nevis;
+    margin-bottom: 3%;
+    
 }
 
-.postColor:hover {
+p.general {
+    
+    text-align: center; 
+    line-height: 2em;
+    
+}
 
-	background-color: #FE9A2E;
-	color: #F2F2F2;
-	-webkit-transition: all 250ms ease-in-out;
+div.imageContain {
+    
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    position: relative;
+    padding: 0px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    
+}
+
+#vince:hover {
+    
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 2;
+    
+}
+
+#octopus:hover {
+    
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 2;
+    
+}
+
+#other:hover {
+    
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 2;
+    
+}
+
+#vince {
+    
+    background-image: url('../images/vince.png'); 
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    -webkit-transition: all 250ms ease-in-out;
 	-moz-transition: all 250ms ease-in-out;
 	-o-transition: all 250ms ease-in-out;
 	transition: all 250ms ease-in-out;
-
+    
 }
 
-.post {
-
-	width: 100%;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	-webkit-transition: all 250ms ease-in-out;
+#octopus {
+    
+    background-image: url('../images/octopus.png');   
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    -webkit-transition: all 250ms ease-in-out;
 	-moz-transition: all 250ms ease-in-out;
 	-o-transition: all 250ms ease-in-out;
 	transition: all 250ms ease-in-out;
-	color: #BDBDBD;
-
+    
 }
 
-.post:hover {
-
-	background-color: #FE9A2E;
-	color: #F2F2F2;
-
-}
-
-.postTitle {
-
-	text-align: center;
-	color: inherit;
-	font-size: 3em;
-	margin-top: 2%;
-	margin-bottom: 6%;
-	font-family: Nevis;
-
-}
-
-.basicTitle {
-
-	font-size: 2em;
-	color: inherit;
-	text-align: center;
-	margin-bottom: 4%;
-	font-family: Nevis;
-
-}
-
-div.example {
-
-	width: 80%;
-	position: relative;
-	margin: 0 auto;
-	height: 500px;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
-	-webkit-transition: all 250ms ease-in-out;
+#other {
+    
+    background-image: url('../images/tank.png');   
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    -webkit-transition: all 250ms ease-in-out;
 	-moz-transition: all 250ms ease-in-out;
 	-o-transition: all 250ms ease-in-out;
 	transition: all 250ms ease-in-out;
-
+    
 }
 
-.overlay {
-
-	position: absolute;
-	width: 100%;
-	height: 0%;
-	bottom: 0px;
-	opacity: 0;
-	left: 0px;
-	right: 0px;
-	font-size: 3em;
-	color: #F1F1F1;
-	font-family: Nevis;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	background-color: rgba(28, 28, 28, 0.7);
-	-webkit-transition: all 250ms ease-in-out;
-	-moz-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
-	transition: all 250ms ease-in-out;
-
-}
-
-div.example:hover .overlay {
-
-	height: 100%;
-	opacity: 1;
-
-}
-
-div.example:hover {
-
-	background-size: 110% auto;
-
-}
-
-#goodOne {
-
-	background-image: url('../images/screenshots/neato.png');
-
-}
-
-#badOne {
-
-	background-image: url('../images/screenshots/bad.png');
-
-}
-
-p.overlayText {
-
-	position: relative;
-	color: #FE9A2E;
-	padding: 10px;
-	background-color: rgba(242, 242, 242, 1);
-	width: 50%;
-	height: 0px;
-	opacity: 0;
-	display: none;
-
-}
-
-div.example:hover div.overlay p.overlayText {
-
-	height: auto;
-	opacity: 1;
-	display: block;
-
-}
-
-hr.basicSep {
-
-	width: 20%;
-	margin-left: auto;
-	margin-right: auto;
-	border: none;
-	border-bottom: 2px solid #BDBDBD;
-	display: block;
-	position: relative;
-	-webkit-transition: all 250ms ease-in-out;
-	-moz-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
-	transition: all 250ms ease-in-out;
-
-}
-
-.post:hover hr {
-
-	border-bottom: 2px solid #F2F2F2;
-
-}
-
-.postColor:hover hr {
-
-	border-bottom: 2px solid #F2F2F2;
-
-}
-
-#between {
-
-	margin-top: 4%;
-	margin-bottom: 4%;
-
-}
-
-.bigText {
-
-	color: inherit;
-	font-size: 5em;
-	font-family: Nevis;
-	line-height: 1em;
-	text-align: center;
-	margin: 20px;
-
+fabric {
+    
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    margin-top: 3%;
+    height: 300px;
+    background-image: url('../images/fabric.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    display: block;
+    
 }
