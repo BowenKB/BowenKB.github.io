@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <title>Launch</title>
+        
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/sidebar.css" />
+        <link type="text/css" rel="stylesheet" href="css/content.css" />
+    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
+    </head>
+    
+    <body>
+        
+        <script>
+
+			 $(function(){
+
+				$("#sidebar selection").on('click', function(){
+
+					$("#sidebar selection").removeClass('active');
+
+					$(this).addClass('active');
+
+					return false;
+
+				});
+			});
+
+		</script>
+        
+        <script>
+        
+        $(function () {
+            $("#videoLink").click(function () {
+        
+                $("content").removeClass('current');
+                
+                $("#videoContent").addClass('current');
+		
+            })
+		
+		});
+            
+        $(function () {
+            $("#musicLink").click(function () {
+        
+                $("content").removeClass('current');
+                
+                $("#musicContent").addClass('current');
+		
+            })
+		
+		});
+            
+        $(function () {
+            $("#newsLink").click(function () {
+        
+                $("content").removeClass('current');
+                
+                $("#newsContent").addClass('current');
+		
+            })
+		
+		});
+            
+        $(function () {
+            $("#socialLink").click(function () {
+        
+                $("content").removeClass('current');
+                
+                $("#socialContent").addClass('current');
+		
+            })
+		
+		});
+            
+        $(function () {
+            $("#otherLink").click(function () {
+        
+                $("content").removeClass('current');
+                
+                $("#otherContent").addClass('current');
+		
+            })
+		
+		});
+            
+        </script>
+    
+        <div class="sidebar" id="sidebar">
+        
+            <p class="sideTitle">Launch</p>
+            
+            <hr class="sep" />
+            
+            <selection id="videoLink">Video</selection>
+            
+            <selection id="musicLink">Music</selection>
+            
+            <selection id="newsLink">News</selection>
+            
+            <selection id="socialLink">Social</selection>
+            
+            <selection id="otherLink">Other</selection>
+        
+        </div>
+        
+<!-- VIDEO CONTENT --------------------------------------------------------------------------------------------------------------------->
+        
+        <content id="videoContent">
+        
+            <a href="http://www.youtube.com" target="_blank"><div class="pageBox" id="youtube"><div class="overlay">YouTube</div></div></a>
+        
+        </content>
+        
+<!-- MUSIC CONTENT --------------------------------------------------------------------------------------------------------------------->
+        
+        <content id="musicContent">
+        
+            <a href="http://www.grooveshark.com" target="_blank"><div class="pageBox" id="grooveshark"><div class="overlay">Grooveshark</div></div></a>
+            
+            <a href="http://www.pandora.com" target="_blank"><div class="pageBox" id="pandora"><div class="overlay">Pandora</div></div></a>
+            
+            <a href="http://www.bandcamp.com" target="_blank"><div class="pageBox" id="bandcamp"><div class="overlay">Bandcamp</div></div></a>
+        
+        </content>
+        
+<!-- NEWS CONTENT ---------------------------------------------------------------------------------------------------------------------->
+    
+        <content id="newsContent">
+        
+            <a href="http://www.theverge.com" target="_blank"><div class="pageBox" id="theverge"><div class="overlay">The Verge</div></div></a>
+            
+            <a href="http://www.omgubuntu.co.uk" target="_blank"><div class="pageBox" id="omgubuntu"><div class="overlay">OMG Ubuntu</div></div></a>
+        
+        </content>
+        
+<!-- SOCIAL CONTENT -------------------------------------------------------------------------------------------------------------------->
+        
+        <content id="socialContent">
+        
+            <a href="http://www.facebook.com" target="_blank"><div class="pageBox" id="facebook"><div class="overlay">Facebook</div></div></a>
+            
+            <a href="http://www.tumblr.com" target="_blank"><div class="pageBox" id="tumblr"><div class="overlay">Tumblr</div></div></a>
+            
+            <a href="http://www.mail.google.com" target="_blank"><div class="pageBox" id="gmail"><div class="overlay">GMail</div></div></a>
+        
+        </content>
+        
+<!-- OTHER CONTENT -------------------------------------------------------------------------------------------------------------------->
+        
+        <content id="otherContent">
+        
+            <a href="http://html-color-codes.info" target="_blank"><div class="pageBox" id="html"><div class="overlay">HTML Color Codes</div></div></a>
+            
+            <a href="http://reddit.com/r/smite" target="_blank"><div class="pageBox" id="smite"><div class="overlay">Smite Subreddit</div></div></a>
+                
+            <a href="http://reddit.com/r/web_design" target="_blank"><div class="pageBox" id="web"><div class="overlay">Web Design Subreddit</div></div></a>
+            
+            <a href="http://reddit.com/r/design_critiques" target="_blank"><div class="pageBox" id="design"><div class="overlay">Design Critiques Subreddit</div></div></a>
+        
+        </content>
+        
+    </body>
+
+</html>

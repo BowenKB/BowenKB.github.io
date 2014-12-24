@@ -1,0 +1,152 @@
+content {
+    
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+    margin-left: 26%;
+    height: 100%;
+    
+}
+
+div.pageBox {
+    
+    width: 30%;
+    height: 200px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 2px solid #D8D8D8;
+    border-radius: 2px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+    
+}
+
+div.pageBox:hover {
+    
+    opacity: 1;
+    transform: scale(1.1);
+    
+}
+
+div.overlay {
+    
+    position: absolute; 
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(8, 138, 104, 0.8);
+    text-align: center;
+    line-height: 200px;
+    opacity: 0;
+    padding: 3%;
+    color: #F2F2F2;
+    -webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+    
+}
+
+div.pageBox:hover div.overlay {
+    
+    opacity: 1;   
+    
+}
+
+.current {
+    
+    display: block;   
+    
+}
+
+#youtube {
+    
+    background-image: url('../images/youtube.PNG');   
+    
+}
+
+#bandcamp {
+    
+    background-image: url('../images/bandcamp.PNG');   
+    
+}
+
+#pandora {
+    
+    background-image: url('../images/pandora.PNG');   
+    
+}
+
+#grooveshark {
+    
+    background-image: url('../images/grooveshark.PNG');   
+    
+}
+
+#omgubuntu {
+    
+    background-image: url('../images/omgubuntu.PNG');   
+    
+}
+
+#theverge {
+    
+    background-image: url('../images/theverge.PNG');   
+    
+}
+
+#facebook {
+    
+    background-image: url('../images/facebook.PNG');   
+    
+}
+
+#gmail {
+    
+    background-image: url('../images/gmail.PNG');   
+    
+}
+
+#tumblr {
+    
+    background-image: url('../images/tumblr.PNG');   
+    
+}
+
+#html {
+    
+    background-image: url('../images/html.PNG');   
+    
+}
+
+#smite {
+    
+    background-image: url('../images/smite.PNG');   
+    
+}
+
+#web {
+    
+    background-image: url('../images/web.PNG');   
+    
+}
+
+#design {
+    
+    background-image: url('../images/design.PNG');   
+    
+}
