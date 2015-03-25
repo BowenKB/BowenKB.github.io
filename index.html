@@ -9,6 +9,7 @@
         <link type="text/css" rel="stylesheet" href="css/main.css" />
         <link type="text/css" rel="stylesheet" href="css/nav.css" />
         <link type="text/css" rel="stylesheet" href="css/content.css" />
+        <link type="text/css" rel="stylesheet" href="css/popup.css" />
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         
@@ -66,6 +67,84 @@
 
 		</script>
     
+<!-- POPUP SCRIPT ---------------------------------------------------------------------------------------------------------------------->
+        
+        <script>
+        
+        $(function () {
+            $('#design').click(function () {
+        
+                $('#designover').fadeIn(300).css("display", "block");
+		
+            })
+		
+		});
+            
+        $(function () {
+            $('#jerrys').click(function () {
+        
+                $('#jerrysover').fadeIn(300).css("display", "block");
+		
+            })
+		
+		});
+            
+        $(function () {
+            $('#port7').click(function () {
+        
+                $('#port7over').fadeIn(300).css("display", "block");
+		
+            })
+		
+		});
+            
+        $(function () {
+            $('#port8').click(function () {
+        
+                $('#port8over').fadeIn(300).css("display", "block");
+		
+            })
+		
+		});
+            
+        $(function () {
+            $('#port9').click(function () {
+        
+                $('#port9over').fadeIn(300).css("display", "block");
+		
+            })
+		
+		});
+            
+        $(function () {
+            $('#pyros').click(function () {
+        
+                $('#pyrosover').fadeIn(300).css("display", "block");
+		
+            })
+		
+		});
+            
+        $(function () {
+            $('#watchlist').click(function () {
+        
+                $('#watchlistover').fadeIn(300).css("display", "block");
+		
+            })
+		
+		});
+            
+        $(function () {
+            $('.closeKey').click(function () {
+        
+                $('.popup').fadeOut(300).css("display", "none");
+		
+            })
+		
+		});
+            
+        </script>
+        
     </head>
     
 <!-- BODY ------------------------------------------------------------------------------------------------------------------------------>
@@ -97,6 +176,82 @@
             
             </div>
 
+<!-- OVERLAYS -------------------------------------------------------------------------------------------------------------------------->
+            
+            <div class="popup" id="designover">
+            
+                <div class="closeKey"></div>
+                <p class="popupTitle">Design Example</p>
+                <p class="descText">
+                    A Project done for a class to display an example of simple design with emphasis on broad colors and                                       subtle animations.
+                </p>
+            
+            </div>
+            
+            <div class="popup" id="jerrysover">
+            
+                <div class="closeKey"></div>
+                <p class="popupTitle">Jerry's Kids</p>
+                <p class="descText">
+                    A site used as a simple portal where people can view the works of animator "Jerry's Kids," as well as
+                    contact and gain further information about him.
+                </p>
+            
+            </div>
+            
+            <div class="popup" id="port7over">
+            
+                <div class="closeKey"></div>
+                <p class="popupTitle">Portfolio #7</p>
+                <p class="descText">
+                    One of a large number of previous portfolio design ideas.
+                </p>
+            
+            </div>
+            
+            <div class="popup" id="port8over">
+            
+                <div class="closeKey"></div>
+                <p class="popupTitle">Portfolio #8</p>
+                <p class="descText">
+                    One of a large number of previous portfolio design ideas.
+                </p>
+            
+            </div>
+            
+            <div class="popup" id="port9over">
+            
+                <div class="closeKey"></div>
+                <p class="popupTitle">Portfolio #9</p>
+                <p class="descText">
+                    One of a large number of previous portfolio design ideas.
+                </p>
+            
+            </div>
+            
+            <div class="popup" id="pyrosover">
+            
+                <div class="closeKey"></div>
+                <p class="popupTitle">PYR.OS</p>
+                <p class="descText">
+                    A personal project to create a distribution site for the (non-existant) PYR.OS. This site was designed with
+                    a focus on providing people with information about the Operating System as well as allowing them to download
+                    it and previous versions.
+                </p>
+            
+            </div>
+            
+            <div class="popup" id="watchlistover">
+            
+                <div class="closeKey"></div>
+                <p class="popupTitle">WatchList</p>
+                <p class="descText">
+                    Another sample site designed around the idea of a movie and show sharing style social network, where you and
+                    your friends could sign up and watch, review, recommend, and discuss various films or shows.
+                </p>
+            
+            </div>
+            
 <!-- ABOUT SECTION --------------------------------------------------------------------------------------------------------------------->
             
             <p class="headTitle">About Me.</p>
