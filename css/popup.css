@@ -36,7 +36,7 @@
     
 }
 
-.closeKey {
+#closeKey {
     
     height: 5vh;
     width: 5vh;
@@ -50,14 +50,49 @@
     position: fixed;
     right: 5vh;
     top: 5vh;
+    align-content: center;
     
 }
 
-.closeKey:hover {
+#closeKey:hover {
     
     border: 3px solid #FA5858;
     background-color: #FA5858;
     cursor: pointer;
+    
+}
+
+#closeKey:before,#closeKey:after {
+    
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: 60%;
+    background-color: #C1C1C1;
+    left: 20%;
+    top: 45%;
+    
+}
+
+#closeKey:before {
+    
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+}
+
+#closeKey:after {
+    
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    
+}
+
+#closeKey:hover:before,#closeKey:hover:after {
+    
+    background-color: #F2F2F2;   
     
 }
 

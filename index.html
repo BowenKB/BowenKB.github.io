@@ -10,6 +10,7 @@
         <link type="text/css" rel="stylesheet" href="css/nav.css" />
         <link type="text/css" rel="stylesheet" href="css/content.css" />
         <link type="text/css" rel="stylesheet" href="css/popup.css" />
+        <link type="text/css" rel="stylesheet" href="css/animations.css" />
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         
@@ -135,7 +136,7 @@
 		});
             
         $(function () {
-            $('.closeKey').click(function () {
+            $('#closeKey, #closeKey:after, #closekey:before').click(function () {
         
                 $('.popup').fadeOut(300).css("display", "none");
 		
@@ -143,6 +144,21 @@
 		
 		});
             
+        </script>
+        
+<!-- ANIMATION ACTIVATOR SCRIPT -------------------------------------------------------------------------------------------------------->
+        
+        <script>
+        
+        $(function () {
+            $('#closeKey').mouseenter(function () {
+        
+                $('#closekey').addClass('wavy');
+		
+            })
+		
+		});
+        
         </script>
         
     </head>
@@ -180,7 +196,7 @@
             
             <div class="popup" id="designover">
             
-                <div class="closeKey"></div>
+                <div id="closeKey"></div>
                 <p class="popupTitle">Design Example</p>
                 <p class="descText">
                     A Project done for a class to display an example of simple design with emphasis on broad colors and                                       subtle animations.
@@ -190,7 +206,7 @@
             
             <div class="popup" id="jerrysover">
             
-                <div class="closeKey"></div>
+                <div id="closeKey"></div>
                 <p class="popupTitle">Jerry's Kids</p>
                 <p class="descText">
                     A site used as a simple portal where people can view the works of animator "Jerry's Kids," as well as
@@ -201,7 +217,7 @@
             
             <div class="popup" id="port7over">
             
-                <div class="closeKey"></div>
+                <div id="closeKey"></div>
                 <p class="popupTitle">Portfolio #7</p>
                 <p class="descText">
                     One of a large number of previous portfolio design ideas.
@@ -211,7 +227,7 @@
             
             <div class="popup" id="port8over">
             
-                <div class="closeKey"></div>
+                <div id="closeKey"></div>
                 <p class="popupTitle">Portfolio #8</p>
                 <p class="descText">
                     One of a large number of previous portfolio design ideas.
@@ -221,7 +237,7 @@
             
             <div class="popup" id="port9over">
             
-                <div class="closeKey"></div>
+                <div id="closeKey"></div>
                 <p class="popupTitle">Portfolio #9</p>
                 <p class="descText">
                     One of a large number of previous portfolio design ideas.
@@ -243,7 +259,7 @@
             
             <div class="popup" id="watchlistover">
             
-                <div class="closeKey"></div>
+                <div id="closeKey"></div>
                 <p class="popupTitle">WatchList</p>
                 <p class="descText">
                     Another sample site designed around the idea of a movie and show sharing style social network, where you and
