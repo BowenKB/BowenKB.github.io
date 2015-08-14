@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <title>HAHANICE!</title>
+        
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/body.css" />
+        <link type="text/css" rel="stylesheet" href="css/nav.css" />
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    </head>
+    
+    <body>
+        
+        <script>
+
+			 $(function(){
+
+				$(".navLinks li selector").on('click', function(){
+
+					$(".navLinks li selector").removeClass('active');
+
+					$(this).addClass('active');
+
+					return false;
+
+				});
+			});
+
+		</script>
+        
+        <script>
+        
+        $(function () {
+            $("#aboutLink").click(function () {
+        
+                $("content").removeClass('current');
+                
+                $("#about").addClass('current');
+		
+            })
+		
+		});
+            
+        $(function () {
+            $("#mapLink").click(function () {
+        
+                $("content").removeClass('current');
+                
+                $("#map").addClass('current');
+		
+            })
+		
+		});
+            
+        $(function () {
+            $("#playersLink").click(function () {
+        
+                $("content").removeClass('current');
+                
+                $("#players").addClass('current');
+		
+            })
+		
+		});
+            
+        $(function () {
+            $("#contactLink").click(function () {
+        
+                $("content").removeClass('current');
+                
+                $("#contact").addClass('current');
+		
+            })
+		
+		});
+            
+        </script>
+    
+        <div class="navBlock">
+        
+            <a class="navTitle" href="#" title="Home">HAHA! NICE!</a>
+            
+            <ul class="navLinks">
+            
+                <li><selector id="aboutLink">About</selector></li>
+                <li><selector id="mapLink">Map</selector></li>
+                <li><selector id="playersLink">Players</selector></li>
+                <li><selector id="contactLink">Contact</selector></li>
+            
+            </ul>
+        
+        </div>
+        
+        <content id="about">
+        
+            <iframe id="aboutVid" src="https://www.youtube.com/embed/d1-D4Ib34Lw?showinfo=0" frameborder="0" allowfullscreen></iframe>
+        
+        </content>
+        
+        <content id="map">
+        
+            <p class="getout">NOT YET BUD!!!</p>
+        
+        </content>
+        
+        <content id="players">
+        
+            <ul class="playerList">
+            
+                <li>Portapotty22 (Owner)</li>
+                <li>teh3gentelmens (cool guy)</li>
+                <li>beanhed8412 (lil gal)</li>
+                <li>supercoolholly (nice bud)</li>
+                <li>AND YOU!!!!!!</li>
+            
+            </ul>
+        
+        </content>
+        
+        <content id="contact">
+        
+            <p class="getout">GET OUT!!!!!!!!!!!!!!!!!!!</p>
+        
+        </content>
+    
+    </body>
+
+</html>

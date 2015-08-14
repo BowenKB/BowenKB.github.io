@@ -1,0 +1,67 @@
+content {
+    
+    display: none;
+    width: 80vw;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 20vw;
+    position: relative;
+    
+}
+
+.current {
+    
+    display: block;   
+    
+}
+
+#aboutVid {
+    
+    width: 80%;
+    height: auto;
+    border: 4px solid #FE2E2E;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    
+}
+
+.getout {
+    
+    font-size: 5em;
+    color: #FE2E2E;
+    padding: 15px;
+    border: 4px solid #2E2EFE;
+    position: relative;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Nevis;
+    letter-spacing: 1em;
+    
+}
+
+ul.playerList {
+    
+    list-style: circle;
+    font-family: Cousine;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border: 4px solid #2E2EFE;
+    padding: 10px;
+    color: #FE2E2E;
+    
+}
+
+ul.playerList li {
+    
+    padding: 10px;   
+    
+}

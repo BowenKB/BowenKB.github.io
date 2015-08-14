@@ -1,0 +1,45 @@
+@font-face {
+
+	font-family: Oswald;
+	src: url('../fonts/Oswald.ttf');
+
+}
+
+@font-face {
+
+	font-family: OpenSans;
+	src: url('../fonts/OpenSans.ttf');
+
+}
+
+@font-face {
+
+	font-family: Nevis;
+	src: url('../fonts/Nevis.ttf');
+
+}
+
+@font-face {
+
+	font-family: Cousine;
+	src: url('../fonts/Cousine.ttf');
+
+}
+
+body {
+
+	padding: 0px;
+	background: #E6E6E6;
+	font-size: 16px;
+	font-family: OpenSans;
+	color: #1C1C1C;
+    background-image: url(../images/pizzspin.gif);
+
+}
+
+a {
+    
+    color: inherit;
+    text-decoration: none;
+    
+}

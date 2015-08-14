@@ -1,0 +1,125 @@
+div.navBlock {
+    
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: transparent;
+    z-index: 5;
+    
+}
+
+a.navTitle {
+    
+    font-family: Nevis;
+    font-size: 3em;
+    color: #BDBDBD;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    left: 20px;
+    -webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+    
+}
+
+a.navTitle:hover {
+    
+    color: #FE2E2E;
+    letter-spacing: 2em;
+    font-size: 6em;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+}
+
+ul.navLinks {
+    
+    font-family: Cousine;
+    list-style: none;
+    width: calc(100% - 20px);
+    outline: none;
+    left: 0px;
+    position: relative;
+    
+}
+
+ul.navLinks li {
+    
+    width: 100%;
+    left: 0px;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    -webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+    
+}
+
+ul.navLinks li selector{
+       
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #BDBDBD;
+    left: 0px;
+    margin-left: 0px;
+    -webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+    
+}
+
+ul.navLinks li selector:hover {
+    
+    color: #088A4B; 
+    cursor: pointer;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-timing-function: linear;
+    
+}
+
+.active {
+    
+    background-color: #F1F1F1;
+    
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
