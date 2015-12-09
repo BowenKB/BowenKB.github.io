@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <title>Rate your Baby</title>
+        
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/content.css" />
+        
+        <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    
+    </head>
+    
+    <body>
+        
+    <script>
+    
+        function readURL(input) {
+            
+            if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#babypic')
+                    .attr('src', e.target.result)
+                    .width(auto)
+                    .height(auto);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+            }
+                       
+    }
+        
+    </script>
+        
+    <script>
+        
+        function selectRating(){
+    
+    var score = 0;
+
+    var ratingBox = document.getElementById("ratingBox");
+    var inputbutton = document.getElementById("button");
+    
+    score = Math.floor(Math.random() * (10 - 1)) + 1;
+    
+    if(score === 1){
+        
+        ratingBox.innerHTML = "1/10 GARBAGE BABY DO NOT RETAIN"
+        
+    }
+    else if(score === 2){
+        
+        ratingBox.innerHTML = "2/10 IMMEDIATELY UN-BIRTH"
+        
+    }
+    if(score === 3){
+        
+        ratingBox.innerHTML = "3/10 REPENT"
+        
+    }
+    if(score === 4){
+        
+        ratingBox.innerHTML = "4/10 HOMAGE TO SATAN"
+        
+    }
+    if(score === 5){
+        
+        ratingBox.innerHTML = "5/10 MEH"
+        
+    }
+    if(score === 6){
+        
+        ratingBox.innerHTML = "6/10 A LITTLE ON THE ICKY SIDE BUT NOT BAD"
+        
+    }
+    if(score === 7){
+        
+        ratingBox.innerHTML = "7/10 GOOD"
+        
+    }
+    if(score === 8){
+        
+        ratingBox.innerHTML = "8/10 WOW! LOOK AT THAT THING!"
+        
+    }
+    if(score === 9){
+        
+        ratingBox.innerHTML = "9/10 ALL ACES"
+        
+    }
+    if(score === 10){
+        
+        ratingBox.innerHTML = "10/10 WONDERFUL BABY BEAUTIFUL BABY!"
+        
+    }
+    
+}
+    
+        
+    </script>
+    
+        <div class="head">
+        
+            <div class="logo"></div>
+            <p id="title">Rate Your Baby!</p>
+            
+        </div>
+        
+        <div class="content">
+        
+            <div id="etc">
+            
+                <img id="babypic" src="" />
+            
+                <input id="button" onchange="readURL(this); selectRating()" type="file" name="filename" accept="image/gif, image/jpeg, image/png">
+                
+            </div>
+            
+            <div class="rating" id="ratingBox">
+            
+            </div>
+            
+        </div>
+    
+    </body>
+
+</html>

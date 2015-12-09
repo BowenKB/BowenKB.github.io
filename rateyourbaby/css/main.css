@@ -1,0 +1,23 @@
+@font-face {
+    
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans.ttf');
+    
+}
+
+@font-face {
+    
+    font-family: Nevis;
+    src: url('../fonts/Nevis.ttf');
+    
+}
+
+body {
+    
+    padding: 0px;
+    margin: 0px;
+    font-family: OpenSans;
+    background-color: #F8E0E6;
+    color: #1C1C1C;
+    
+}

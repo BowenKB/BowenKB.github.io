@@ -1,0 +1,75 @@
+.head {
+    
+    width: 100vw;
+    height: 20vw;
+    font-family: cursive;
+    font-size: 2em;
+    color: darkred;
+    text-align: center;
+    display: block;
+    
+}
+
+.logo {
+    
+    width: 10vw;
+    height: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    display: block;
+    position: relative;
+    background-image: url("../images/scales.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.content {
+    
+    width: 100vw;
+    position: relative;
+    display: block;
+    
+}
+
+input[type="file"] {
+    
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    border: 3px dashed darkred;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    
+}
+
+#babypic {
+    
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vw;
+    
+}
+
+.rating {
+    
+    font-family: cursive;
+    font-size: 2.5em;
+    color: darkslateblue;
+    display: block;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    position: relative;
+    bottom: 0px;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    
+}
