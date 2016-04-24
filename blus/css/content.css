@@ -1,0 +1,505 @@
+/* ANIMATIONS ------------------------------------------------------------------------------------------- */
+
+@keyframes logoAnimIn {
+    
+    from {transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        width: 10vw; height: 10vw;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(43,43,43,1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(43,43,43,1);
+        box-shadow: 0px 0px 0px 0px rgba(43,43,43,1);
+    }
+    
+    to {transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        width: 11vw; height: 11vw;
+        -webkit-box-shadow: 0px 0px 49px 0px rgba(43,43,43,1);
+        -moz-box-shadow: 0px 0px 49px 0px rgba(43,43,43,1);
+        box-shadow: 0px 0px 49px 0px rgba(43,43,43,1);
+    
+    }
+    
+}
+
+@keyframes logoAnimOut {
+    
+    from {transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        width: 11vw; height: 11vw;
+        -webkit-box-shadow: 0px 0px 49px 0px rgba(43,43,43,1);
+        -moz-box-shadow: 0px 0px 49px 0px rgba(43,43,43,1);
+        box-shadow: 0px 0px 49px 0px rgba(43,43,43,1);
+        
+    }
+    
+    to {transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        width: 10vw; height: 10vw;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(43,43,43,1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(43,43,43,1);
+        box-shadow: 0px 0px 0px 0px rgba(43,43,43,1);
+        
+    }
+    
+}
+
+@keyframes wiggle {
+	0% {
+		-webkit-transform:rotate(4deg);
+        transform:rotate(4deg);
+        -ms-transform:rotate(4deg);
+	}
+	50% {
+		-webkit-transform:rotate(-4deg);
+        transform:rotate(-4deg);
+        -ms-transform:rotate(-4deg);
+	}
+	100% {
+		-webkit-transform:rotate(4deg);
+        transform:rotate(4deg);
+        -ms-transform:rotate(4deg);
+	}
+}
+
+/* CSS FOR THE SIDEBAR BASE ----------------------------------------------------------------------------- */
+
+sidebar {
+    
+    position: fixed;
+    width: 20vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding: 20px;
+    
+}
+
+.background {
+    
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-image: url('../files/images/front1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    overflow: hidden;
+    -webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+    
+}
+
+.colorOverlay {
+    
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    background-color: rgba(213, 224, 78, 0.5);
+    z-index: 3;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    
+}
+
+/* SELECTORS ------------------------------------------------------------------------------------------- */
+
+.logo {
+    
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    background-image: url('../files/images/logo.png');
+    background-position: center;
+    background-size: cover;
+    animation-name: logoAnimOut;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-border-radius: 10vw; 
+    -webkit-border-radius: 10vw; 
+    border-radius: 10vw;
+    z-index: 4;
+}
+
+.logo:hover {
+    
+    cursor: pointer;
+    animation-name: logoAnimIn;
+    animation-duration: .7s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-border-radius: 11vw; 
+    -webkit-border-radius: 11vw; 
+    border-radius: 11vw;
+    
+}
+
+.navLink {
+    
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #000000;
+    font-family: Lato;
+    font-size: 1.1em;
+    -webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+    z-index: 4;
+    font-weight: bold;
+    padding: 5%;
+    
+}
+
+.navLink:hover {
+    
+    color: #1C3F94;
+    cursor: pointer;
+    
+}
+
+.active {
+    
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    color: #1C3F94;
+    
+}
+
+/* CONTENT SECTION ------------------------------------------------------------------------ */
+
+content {
+    
+    width: calc(80vw - 40px);
+    position: fixed;
+    left: calc(20vw + 40px);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow-y: scroll;
+    font-family: Lato;
+    color: #000000;
+    display: none;
+    background-image: url(../files/images/back.png);
+    
+}
+
+.articleText {
+    
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    
+}
+
+.articleTitle {
+    
+    font-size: 3em;
+    font-family: Lora;
+    color: #1C3F94;
+    margin-bottom: 5vh;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    display: block;
+    
+}
+
+.subTitle {
+    
+    font-size: 2em;
+    font-family: Open Sans;
+    color: #255AE0;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.titleWithBack {
+    
+    font-size: 2.5em;
+    font-family: Lora;
+    color: #1C3F94;
+    margin-bottom: 5vh;
+    padding: 20px;
+    background-color: #FFFFFF;
+    
+}
+
+.current {
+    
+    display: block;
+    
+}
+
+hr {
+    
+    width: 10vw;
+    border: 2px solid #BCBEC0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0px;
+    
+}
+
+/* PRODUCTS PAGE GRID --------------------------------------------------------------------------- */
+
+div.container {
+    
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    
+}
+
+div.productBlock {
+    
+    width: calc(30vw - 40px);
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.productBlock p.list {
+    
+    font-size: 1.2em;
+    
+}
+
+.gridTitle {
+    
+    font-size: 2em;
+    color: #1C3F94;
+    text-align: left;
+    display: inline-block;
+    font-family: Lora;
+    
+    
+}
+
+.productBlock:hover .cone {
+    
+    animation: wiggle .4s 2;
+    
+}
+
+img.cone {
+    
+    top: 2vh;
+    left: 0px;
+    height: 15vh;
+    width: 15vh;
+    outline: none;
+    border: none;
+    margin-right: 2vw;
+    display: inline-block;
+    position: relative;
+    
+}
+
+#left {
+    
+    float: left;
+    
+}
+
+#right {
+    
+    float: right;
+    
+}
+
+/* ABOUT PAGE ---------------------------------------------------------------------------------- */
+
+img.textLogo {
+    
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 30vw;
+    height: auto;
+    position: relative;
+    
+}
+
+div#map {
+    
+    width: 60vw;
+    height: 40vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vw;
+    border: none;
+    outline: none;
+    
+}
+
+form {
+    
+    width: 40vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+input[type="text"] {
+    
+    padding: 10px;
+    font-family: Open Sans;
+    background-color: #E6E6E6;
+    width: 30vw;
+    border: none;
+    outline: none;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    -webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+    
+}
+
+input[type="text"]:focus {
+    
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.6);
+    color: #1C3F94;
+    padding: 15px;
+    
+}
+
+textarea {
+    
+    padding: 10px;
+    font-family: Open Sans;
+    background-color: #E6E6E6;
+    width: 30vw;
+    border: none;
+    outline: none;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    -webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+    
+}
+
+textarea:focus {
+    
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.6);
+    color: #1C3F94;
+    padding: 15px;
+    
+}
+
+input[type="submit"] {
+    
+    border: none;
+    outline: none;
+    width: 6vw;
+    padding: 15px;
+    font-family: Open Sans;
+    background-color: #E6E6E6;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+    
+}
+
+input[type="submit"]:hover {
+    
+    background-color: #01DF3A;
+    color: #F2F2F2;
+    
+}
+
+.buttonContainer {
+    
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    width: auto;
+    
+    
+}
+
+input[type="reset"] {
+    
+    border: none;
+    outline: none;
+    width: 6vw;
+    padding: 15px;
+    font-family: Open Sans;
+    background-color: #E6E6E6;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+    
+}
+
+input[type="reset"]:hover {
+    
+    background-color: #FA5858;
+    color: #F2F2F2;
+    
+}
+
+div.fb-page {
+    
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+}
