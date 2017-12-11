@@ -1,0 +1,14 @@
+This is how to view the website as if it was an actual webpage on an online server. Unfortunately I dont have the extra money to throw it online or I would!
+It is all hand coded and designed by me using Brackets and the Adobe Suite for the design. I had a little help from an online resource for making the "carousel".
+If you have any questions on how to open it or anything else feel free to email me. Hopefully this works on the first try!
+
+
+1. Download this folder to a computer
+
+2. Right-click on the swing_webpage.html
+
+3. Hover over the "open with" option
+
+4. Select Chrome as your browser
+
+5. The site should open! :)

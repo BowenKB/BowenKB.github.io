@@ -1,0 +1,79 @@
+body {  margin: 0 auto;
+        width: 960px;
+}
+
+.titlebar 
+    {
+        width: 900px;
+        height: 90px;
+        margin: 30px;
+        padding: 10px,10px,10px,10px;
+        text-align: center;
+        background-color: #E8BFAF;
+    }  
+    
+
+h1 {
+        font-family: 'Meddon', cursive;
+        color: white;
+    font-size: 30px;
+    line-height: .3;
+    padding-top: 35px;
+}
+h2 {
+    font-family: 'Old Standard TT', serif;
+        color: white;
+    font-size: 14px;
+    line-height: .3;
+    
+}
+
+.imagesection{
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.scroller{
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 270px;
+    
+}
+.symbols{
+    margin: 30px;
+    width: 900px;
+    height: 270px;
+    background-image:url(photoelements/yep/copy1.png);
+    background-size: cover;
+    
+}
+.titlebarr
+{
+        width: 900px;
+        height: 60px;
+        margin: 30px; 300px;
+        padding: 10px,10px,10px,10px;
+        text-align: center;
+        background-color: #E8BFAF;
+    }  
+h3 {font-family: 'Meddon', cursive;
+        color: white;
+    font-size: 20px;
+    line-height: .3;
+    padding-top: 25px;}
+.symbolss{
+    margin: 30px;
+    width: 900px;
+    height: 270px;
+    background-image:url(photoelements/yep/copy2.png);
+    background-size: cover;
+    
+}
+.symbolsss{
+    margin: 30px;
+    width: 900px;
+    height: 30px;
+    background-image:url(photoelements/yep/descrip-02.png);
+    background-size: cover;
+    
+}
