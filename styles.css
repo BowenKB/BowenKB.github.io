@@ -1,0 +1,110 @@
+@-webkit-keyframes backgroundAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes backgroundAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes backgroundAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes backgroundAnim { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+body {
+    
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(238deg, #ec534a, #f29a30, #c480b7);
+    background-size: 600% 600%;
+
+    -webkit-animation: backgroundAnim 15s ease infinite;
+    -moz-animation: backgroundAnim 15s ease infinite;
+    -o-animation: backgroundAnim 15s ease infinite;
+    animation: backgroundAnim 15s ease infinite;
+    
+}
+
+div.container {
+    
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    margin-top: 10vh;
+    padding: 0px;
+
+}
+
+h1 {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #F2F2F2;
+    font-size: 4vw;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    letter-spacing: .1em;
+    position: relative;
+    z-index: 3;
+    
+}
+
+h3 {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400i;
+    color: #F2F2F2;
+    opacity: 0.7;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    margin: 0px;
+    letter-spacing:  .1em;
+    
+}
+
+span.alt {
+    
+    font-size: .8em;
+    font-style: italic;
+    color: inherit;
+    
+}
+
+img.broom {
+    
+    height: 30vh;
+    margin: auto;
+    display: block;
+    opacity: 0.75;
+    position: relative;
+    z-index: 3;
+    
+}
+
+ // div.grain {
+    
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+    height: 90vh;
+    width: 90vw;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(SVG/grain.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 2;
+    
+}
