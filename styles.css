@@ -111,7 +111,7 @@ img.broom {
     
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (max-width: 1000px) {
             
     h3 {
         
