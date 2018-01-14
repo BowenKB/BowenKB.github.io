@@ -72,6 +72,8 @@ h3 {
     
 }
 
+
+
 span.alt {
     
     font-size: .8em;
@@ -107,4 +109,26 @@ img.broom {
     opacity: 0.5;
     z-index: 2;
     
+}
+
+@media screen and (min-width: 420px) {
+            
+    h3 {
+        
+        font-size: 4vw;
+    
+    }
+    
+    span.alt {
+        
+        font-size: 3vw;
+        
+    }
+    
+    h1 {
+        
+        font-size: 8vw
+        
+    }
+         
 }
