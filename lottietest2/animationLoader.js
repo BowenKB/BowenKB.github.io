@@ -13,6 +13,16 @@ let animationPlay = bodymovin.loadAnimation({
     path: "buttonPress.json"
 });
 
+var cursorTrailContainer = document.getElementById('cursorTrail');
+
+let cursorTrail = bodymovin.loadAnimation({
+    container: cursorTrailContainer,
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: "cursorTrail.json"
+});
+
 // Adds listener so when button is clicked the animation plays
 buttonSelector.addEventListener('click', function() {
     animationPlay.play();
@@ -44,3 +54,17 @@ animationPlay.addEventListener('complete', function() {
     /* document.getElementById('animationContainer').style.backgroundColor = "red"; */
 
 });
+
+let trail = document.getElementById('cursorTrail');
+const onMouseMove = (e) =>{
+    trail.style.left = e.pageX - 40 + 'px';
+    trail.style.top = e.pageY - 40 + 'px';
+}
+document.addEventListener('mousemove', onMouseMove);
+
+let overlay = document.getElementById('backgroundOverlay');
+const onMouseMove2 = (e) =>{
+    overlay.style.left = e.pageX - 150 + 'px';
+    overlay.style.top = e.pageY - 150 + 'px';
+}
+document.addEventListener('mousemove', onMouseMove2);
