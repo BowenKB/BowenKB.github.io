@@ -1,0 +1,131 @@
+@-webkit-keyframes animatedGradient {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+@-moz-keyframes animatedGradient {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+@keyframes animatedGradient {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+
+body {
+
+    background: #f2f2f2;
+
+}
+
+h1 {
+
+    font-family: Helvetica, Arial, sans-serif;
+    color: #2d2d2b;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 800;
+    position: relative;
+
+}
+
+h4 {
+
+    font-family: Helvetica, Arial, sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+    position: relative;
+    padding: 10px;
+    background-color: #254c85;
+    width: 80px;
+    margin: 0 auto;
+
+}
+
+div#adBody {
+
+    height: 600px;
+    width: 300px;
+    left: calc(50% - 150px);
+    position: relative;
+    margin-top: 80px;
+    padding: 0;
+    background-color: #2d2d2b;
+    overflow: hidden;
+    border: 3px solid white;
+
+}
+
+div#globeAnimation {
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 300px;
+    height: 120px;
+    z-index: 2;
+    background-size: cover;
+
+}
+
+div#visitText {
+
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+    height: 80px;
+    width: 160px;
+    z-index: 3;
+
+}
+
+div#gradientOverlay {
+
+    width: 300px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background: linear-gradient(307deg, #b8439b, #eba69b, #9c28bd, #254c85);
+    background-size: 800% 800%;
+    z-index: 4;
+
+    -webkit-animation: animatedGradient 7s ease infinite;
+    -moz-animation: animatedGradient 7s ease infinite;
+    animation: animatedGradient 7s ease infinite;
+
+    transition: all 1s cubic-bezier(.66,.02,.35,.99);
+
+}
+
+div#adBody:hover div#gradientOverlay {
+
+    top: -120px;
+
+}
+
+div#textOverlay {
+
+    height: 600px;
+    width: 300px;
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+
+}
+
+div#logo {
+
+    height: 150px;
+    width: 300px;
+    top: calc(50% - 75px);
+    left: 0px;
+    position: absolute;
+    z-index: 6;
+}
