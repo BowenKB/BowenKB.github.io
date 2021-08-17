@@ -1,0 +1,123 @@
+body {
+
+    background: #f2f2f2;
+
+}
+
+h1 {
+
+    font-family: Helvetica, Arial, sans-serif;
+    color: #2d2d2b;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 800;
+    position: relative;
+
+}
+
+h4 {
+
+    font-family: Helvetica, Arial, sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+    position: relative;
+    padding: 10px;
+    background-color: #254c85;
+    width: 80px;
+    margin: 0 auto;
+
+}
+
+div#adBody {
+
+    height: 600px;
+    width: 300px;
+    left: calc(50% - 150px);
+    position: relative;
+    margin-top: 80px;
+    padding: 0;
+    background-color: #2d2d2b;
+    overflow: hidden;
+    border: 3px solid white;
+    touch-action: none;
+
+}
+
+img#sky {
+
+    height: 440px;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+
+img#grass {
+
+    height: 160px;
+    width: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+div#rearClouds {
+
+    height: 330px;
+    width: 300px;
+    top: 27px;
+    left: 0px;
+    position: absolute;
+    z-index: 1;
+
+}
+
+div#timothy {
+
+    width: 90px;
+    height: 134px;
+    top: 308px;
+    left: 105px;
+    z-index: 3;
+    touch-action: none;
+    user-select: none;
+    position: absolute;
+    transition: transform ease-in-out 1s;
+
+}
+
+div#timothy:hover {
+
+    cursor: pointer;
+
+}
+
+div#directions {
+
+    position: absolute;
+    height: 240px;
+    width: 300px;
+    opacity: 1;
+    top: 80px;
+    left: 0px;
+    z-index: 2;
+    
+    transition: all ease-in-out 1s;
+
+}
+
+div#frontClouds {
+
+    height: 80px;
+    width: 300px;
+    top: 114px;
+    left: 0px;
+    position: absolute;
+    z-index: 4;
+
+}
